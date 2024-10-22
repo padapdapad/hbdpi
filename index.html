@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Nissa</title>
+    <style>
+        /* Style yang sama seperti sebelumnya */
+    </style>
+</head>
+<body>
+    <div class="birthday-card">
+        <img src="URL_GAMBAR_ANDA" alt="Gambar Ulang Tahun">
+        <h1>Happy Birthday</h1>
+        <div class="name">Nissa</div>
+        <button id="birthdayButton">Tekan Untuk Membuka</button>
+    </div>
+
+    <!-- Tambahkan elemen audio -->
+    <audio id="birthdaySong">
+        <source src="URL_LAGU_ANDA" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        const button = document.getElementById('birthdayButton');
+        const audio = document.getElementById('birthdaySong');
+        
+        button.addEventListener('click', () => {
+            alert('Selamat Ulang Tahun Nissa! Semoga hari ini penuh kebahagiaan dan kejutan! 🎉🎂');
+            // Putar lagu setelah alert ditutup
+            audio.play();
+        });
+    </script>
+</body>
+</html>
